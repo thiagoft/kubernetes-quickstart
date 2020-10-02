@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: web-server # onde "app" é uma label a escolha
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
